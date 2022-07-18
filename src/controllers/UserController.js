@@ -1,16 +1,13 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const {
-    validationResult,
-    matchedData
-} = require('express-validator');
+const {validationResult,matchedData} = require('express-validator');
 const State = require('../models/State')
 const User = require('../models/Users')
 const Category = require('../models/Category')
 const Ads = require('../models/Ads');
-const {
-    default: mongoose
-} = require('mongoose');
+
+
+
 module.exports = {
     getStates: async (req, res) => {
         let states = await State.find();

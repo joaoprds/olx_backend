@@ -3,13 +3,14 @@ const router = express.Router();
 
 const Auth = require('./middlewares/Auth')
 
-const AuthValidator = require('./validators/Authvalidator');
-const UserController = require ('./validators/UserController');
+const AuthValidator = require('./validators/AuthValidator');
+const UserValidator = require ('./validators/UserValidator');
 
 
 const AuthController = require ('./controllers/AuthController');
-const AdsController = require ('./controllers/AdsController');
 const UserController = require ('./controllers/UserController');
+const AdsController = require ('./controllers/AdsController');
+
 
 
 
